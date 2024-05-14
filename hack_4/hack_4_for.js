@@ -8,5 +8,13 @@
 let result = [];
 
 
+let log = console.log;
+
+for(let i =0;i <= 7; i++)
+    if(i % 2 == 1) {
+    result.push(i);
+}
+
+log(result);
 //export result
 module.exports = result;

@@ -8,9 +8,18 @@
  * 
  * output => ["b@r","b@z","QUX"]   
  */
-let arr = ["foo","bar","baz","qux","echo"];
+let log = console.log;
+let arr = ["foo", "bar", "baz", "qux", "echo"];
 let result = [];
 
+let len = arr.length;
 
+for (let i = 1; i < len - 1; i++) {
+    let modifiedElement = arr[i].replace("a", "@");
+    result.push(modifiedElement);
+}
+
+result[result.length - 1] = result[result.length - 1].toUpperCase();
+log(result);
 //export result
 module.exports = result;

@@ -7,6 +7,13 @@
  */
 let result = [];
 
+let log = console.log;
+
+for(let i =1;i <= 5; i++){
+    result.push(i);
+}
+
+log(result);
 
 //export result
 module.exports = result;

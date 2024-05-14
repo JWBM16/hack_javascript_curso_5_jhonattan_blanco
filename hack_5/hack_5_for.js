@@ -7,6 +7,13 @@
  */
 let result = [];
 
+let log = console.log;
 
+for(let i =7;i >= 1; i--)
+    if(i % 2 == 1) {
+    result.push(i);
+}
+
+log(result);
 //export result
 module.exports = result;
